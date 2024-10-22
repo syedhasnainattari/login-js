@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Login & Signup Form</title>
+</head>
+<body>
+<div class="ring">
+    <i style="--clr:#00ffd9;"></i>
+    <i style="--clr:#ff00c8;"></i>
+    <i style="--clr:#0091ff;"></i>
+    <div class="login">
+      <h2 id="form-title">Signup Form</h2>
+      <form id="auth-form" onsubmit="signUp(event)">
+        <div class="inputBx">
+          <input type="text" id="username" placeholder="Username" required>
+        </div>
+        <div class="inputBx">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="inputBx">
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <div class="inputBx">
+          <input type="submit" id="submit-btn" value="Sign Up">
+        </div>
+      </form>
+
+      
+      <p id="signup-message" style="color:green; display:none;">Signup Successful!</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

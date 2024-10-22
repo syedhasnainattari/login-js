@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome Page</title>
+</head>
+<body>
+  <div class="welcome-message">
+    <h1 id="welcome-text"></h1>
+  </div>
+
+  <script>
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('username');
+
+    
+    const welcomeText = document.getElementById("welcome-text");
+    welcomeText.innerHTML = `Hello, ${username}! Welcome to your dashboard.`;
+  </script>
+</body>
+</html>
